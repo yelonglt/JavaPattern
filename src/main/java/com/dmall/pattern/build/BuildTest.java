@@ -6,7 +6,7 @@ import com.dmall.pattern.build.factory.ToyFactory;
 /**
  * Created by yelong on 2016/11/11.
  */
-public class Test {
+public class BuildTest {
 
     public static void main(String[] args) {
 
