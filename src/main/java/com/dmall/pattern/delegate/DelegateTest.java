@@ -10,17 +10,17 @@ public class DelegateTest {
     public static void main(String[] args) {
 
         //静态代理
-        Plaintiff jack = new Plaintiff();
-        ILawsuit lawsuit = new Lawyer(jack);
+        Plaintiff plaintiff = new Plaintiff();
+        Lawsuit lawsuit = new Lawyer(plaintiff);
         lawsuit.submit();
         lawsuit.finish();
 
         System.out.println("-----------");
 
         //动态代理
-        DynamicProxy proxy = new DynamicProxy(jack);
-        ClassLoader loader = jack.getClass().getClassLoader();
-        ILawsuit lawyer = (ILawsuit) Proxy.newProxyInstance(loader, new Class[]{ILawsuit.class}, proxy);
+        DynamicProxy proxy = new DynamicProxy(plaintiff);
+        ClassLoader loader = plaintiff.getClass().getClassLoader();
+        Lawsuit lawyer = (Lawsuit) Proxy.newProxyInstance(loader, new Class[]{Lawsuit.class}, proxy);
 
         lawyer.submit();
         lawyer.burden();

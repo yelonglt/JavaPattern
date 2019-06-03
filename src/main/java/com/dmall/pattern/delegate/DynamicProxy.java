@@ -17,6 +17,7 @@ public class DynamicProxy implements InvocationHandler {
     }
 
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        // 调用被代理对象的方法
         return method.invoke(object, args);
     }
 }

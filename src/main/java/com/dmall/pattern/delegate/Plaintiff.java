@@ -4,7 +4,7 @@ package com.dmall.pattern.delegate;
  * 原告
  * Created by yelong on 2016/12/19.
  */
-public class Plaintiff implements ILawsuit {
+public class Plaintiff implements Lawsuit {
 
     public void submit() {
         System.out.println("提交诉讼申请");

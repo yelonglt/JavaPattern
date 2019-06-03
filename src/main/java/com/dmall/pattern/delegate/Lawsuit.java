@@ -4,7 +4,7 @@ package com.dmall.pattern.delegate;
  * 律师诉讼接口
  * Created by yelong on 2016/12/19.
  */
-public interface ILawsuit {
+public interface Lawsuit {
 
     /**
      * 提交申请
