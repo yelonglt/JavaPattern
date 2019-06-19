@@ -1,10 +1,5 @@
 package com.dmall.pattern.strategy;
 
-import com.dmall.pattern.flyweight.Bike;
-import com.dmall.pattern.flyweight.BikeFactory;
-
-import java.util.HashMap;
-
 /**
  * Created by yelong on 2019-06-19.
  * mail:354734713@qq.com
