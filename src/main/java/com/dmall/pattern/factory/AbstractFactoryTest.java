@@ -19,6 +19,7 @@ public class AbstractFactoryTest {
         //CarFactory factory = new TSLCarFactory();
         factory.installWheel();
         factory.installEngine();
+        factory.installDone();
     }
 
 }
